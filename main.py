@@ -44,8 +44,11 @@ for i in list_result2:
                 i[5] = j[5]
             if i[6] == "":
                 i[6] = j[6]
+
 list_result3 = []
 for i in list_result2:
+    while i[-1] == '':
+        i.pop(-1)
     if i not in list_result3:
         list_result3.append(i)
 
